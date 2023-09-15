@@ -11,3 +11,7 @@ meu-site/user
 //layoute
 
 - layoute tem acesso a todo o sistema e funciona em forma de cascada
+
+//tailwind
+
+-pode adicionar uma diretamente no tema do tailwind cores, exemplo no tailwind.config

@@ -1,0 +1,13 @@
+// app router
+
+- Antes era só criar um arquivo .tsx dentro de app já seria uma rota
+meu-site/user
+
+- nova forma 
+-- pasta com um nome que vai aparecer na rota e um arquivo chamado page que era o index
+meu-site/user
+--page é o novo index
+
+//layoute
+
+- layoute tem acesso a todo o sistema e funciona em forma de cascada

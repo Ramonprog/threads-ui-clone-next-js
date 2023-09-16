@@ -17,7 +17,7 @@ export default function DialogPost() {
             <DialogTrigger asChild>
                 <p className="text-neutral-500 flex-1 font-light">Start a threed...</p>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px]">
+            <DialogContent className="sm:max-w-[425px] bg-zinc-900">
                 <DialogHeader>
                     <DialogTitle>Edit profile</DialogTitle>
                     <DialogDescription>

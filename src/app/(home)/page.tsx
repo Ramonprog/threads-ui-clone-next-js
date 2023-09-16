@@ -1,9 +1,13 @@
 import LogoThreds from '@/assets/threds-logo.svg'
 import Image from 'next/image'
-import { HomeIcon, Search, PenSquare, Heart, User } from 'lucide-react'
+import { HomeIcon, Search, PenSquare, Heart, User, MessageCircle, Repeat2, Send } from 'lucide-react'
 import Link from 'next/link'
 import DropdownMenuHome from './components/drodown'
 import Post from './components/Post'
+import styles from './styles.module.css'
+import PostAvatar from './components/PostAvatar'
+import { cn } from '@/lib/utils'
+import { RepliesAvatar } from './components/RepliesAvatar'
 
 const menu = [
   {
@@ -47,8 +51,56 @@ export default function Home() {
         <section>
           <Post />
         </section>
-        <hr className='mt-4 h-1 opacity-20' />
+        <hr className='my-7 h-1 opacity-20' />
+
+        <section className={styles.container}>
+          <div className={styles.avatar}>
+            <PostAvatar
+              src="https://github.com/Ramonprog.png"
+              fallback="RP"
+            />
+          </div>
+          <div className={styles.username}>
+            <p className='text-zinc-50'>ojoaobibiano</p>
+          </div>
+          <div className={styles.time}>10h</div>
+          <div className={styles.separator}>
+            <span className="border-l-zinc-700 h-full border-l-[2px] block ml-5 my-2"></span>
+          </div>
+          <div className={cn(styles.reply_avatar, "m-auto")}>
+            <RepliesAvatar
+              data={[
+                {
+                  src: "https://github.com/eduardobertozi.png",
+                  fallbackInitials: "EB",
+                },
+                {
+                  src: "https://github.com/talissonoliveira.png",
+                  fallbackInitials: "TO",
+                },
+              ]}
+            />
+          </div>
+          <div className={styles.post}>
+            <p className="text-zinc-50">
+              O universo do Front-End Development é cheio de possibilidades empolgantes, desde HTML até JavaScript. Cada linha de código cria experiências incríveis na web. Qual é sua tecnologia favorita? Compartilhe nos comentários! ⬇️ #FrontEndDevelopment #CodingJourney #WebDev
+            </p>
+          </div>
+          <div className={cn(styles.actions, "flex gap-2 mt-3")}>
+            <Heart />
+            <MessageCircle />
+            <Repeat2 />
+            <Send />
+          </div>
+          <div className={cn(styles.likes_and_replies, "mt-3")}>
+            <span className="text-sm text-neutral-500">
+              7 replies · 23 likes
+            </span>
+          </div>
+        </section>
       </article>
+
+
     </main>
   )
 }

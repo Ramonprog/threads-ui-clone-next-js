@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-threads-bg-default text-threads-text-default'>{children}</body>
+      <body className='bg-zinc-950 text-neutral-500'>{children}</body>
     </html>
   )
 }

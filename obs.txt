@@ -15,3 +15,7 @@ meu-site/user
 //tailwind
 
 -pode adicionar uma diretamente no tema do tailwind cores, exemplo no tailwind.config
+
+- Rota
+-- coloquei (home) para nao considerar o path, ou seja, nao precisa 
+usar www.meu-site/home.com, ele ja vai entender que www.meu-site.com já é a home

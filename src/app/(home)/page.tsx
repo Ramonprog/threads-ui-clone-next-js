@@ -2,6 +2,8 @@ import LogoThreds from '@/assets/threds-logo.svg'
 import Image from 'next/image'
 import { HomeIcon, Search, PenSquare, Heart, User } from 'lucide-react'
 import Link from 'next/link'
+import DropdownMenuHome from './components/drodown'
+import Post from './components/Post'
 
 const menu = [
   {
@@ -38,10 +40,15 @@ export default function Home() {
               </Link>
             </li>
           ))}
-
         </ul>
-        <h4>x</h4>
+        <DropdownMenuHome />
       </nav>
+      <article className='max-w-lg m-auto'>
+        <section>
+          <Post />
+        </section>
+        <hr className='mt-4 h-1 opacity-20' />
+      </article>
     </main>
   )
 }

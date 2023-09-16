@@ -61,7 +61,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.username}>
-            <p className='text-zinc-50'>ojoaobibiano</p>
+            <p className='text-zinc-50'>ramonProg</p>
           </div>
           <div className={styles.time}>10h</div>
           <div className={styles.separator}>
@@ -71,12 +71,12 @@ export default function Home() {
             <RepliesAvatar
               data={[
                 {
-                  src: "https://github.com/eduardobertozi.png",
-                  fallbackInitials: "EB",
+                  src: "https://github.com/Lucas-Teodosio.png",
+                  fallbackInitials: "LT",
                 },
                 {
-                  src: "https://github.com/talissonoliveira.png",
-                  fallbackInitials: "TO",
+                  src: "https://github.com/PedroSS11.png",
+                  fallbackInitials: "PH",
                 },
               ]}
             />
